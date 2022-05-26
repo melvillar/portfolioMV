@@ -1,0 +1,81 @@
+/* Descripciones de cada sección*/
+.tInicio{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.pInicio{
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    margin: 2rem;
+    padding: 4rem;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left;
+}
+/* Ejemplos por cada sección*/
+.imgDescarga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+.nose{
+    height: 40vh;
+    border-radius: 15%;
+    padding-bottom: 1em;
+    padding-right: 1rem;
+}
+.h2custom{
+    width: 100%;
+}
+.descarga{
+    background: #FFD7F4;
+    border-radius: 30px;
+    padding: 1rem;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #0E172C;
+    align-items: center;
+    margin: 2rem;
+    font-weight: bold ;
+}
+/*Form*/
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 6rem;
+    color: #0E172C; 
+}
+input{
+    text-align: center;
+    margin: 0.7rem;
+    padding: 0.7rem;
+    background-color: aliceblue;
+    border-radius: 30px;
+    border: none
+}
+/* Media Querie resoluciones menores a 768px */
+@media screen and (max-width: 768px){
+    .pInicio{
+        padding: 1rem;
+    }
+    .nose{
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+    }
+    .h2custom{
+        width: 100%;
+    }
+}
+

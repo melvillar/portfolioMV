@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Menú Mobile - Oculto en desktop */
+.respmenu a {
+    display: block;
+    padding: 0.625rem 1.25rem;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+}
+.respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 3rem;
+    pointer-events: none;
+}
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+}
+.respmenu {
+    visibility: hidden;
+    color: white;
+    position: relative;
+    background: rgba(146, 104, 202, 0.8);
+    backdrop-filter: blur(9px);
+    min-height: 3rem;
+}
+.respmenu nav {
+    display: none;
+}
+.respmenu input:checked ~ nav {
+    display: block;
+}
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+}
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+/* Barra de Navegación Desktop*/
+.menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    list-style-type: none;
+    background-color: #C69BED;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.188rem;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem;
+    padding: 0.7rem;
+    background-color: aliceblue;
+    border-radius: 30px;
+    height: 3.125rem;
+    width: 11.563rem;
+    left: 4.875rem;
+    top: 2.375rem;
+}
+.menu li a{
+    text-decoration: none;
+    color: #0E172C;
+    justify-items: center;
+    align-items: center;
+}
+.menu li:hover{
+    background-color: #0E172C;
+}
+.menu li a:hover{
+    color: aliceblue;
+}
+/* Body */
+body{
+    background-image: linear-gradient(to top, #9268CA 0%, #FFD7F4 100%);
+    background-size: cover;
+}
+/* Biografía Home */
+.presentation{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+.fotoperfil{
+    height: 21.438rem;
+    width: 21.813rem;
+    left: 4.875rem;
+    top: 15.25rem;
+    border-radius: 40px;
+    margin: 2rem;
+}
+.inicio{
+    margin: 60%;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    color:#0E172C;
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.563rem;
+    text-align: left;
+}
+.biografia{
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    margin: 2rem;
+    line-height: 1,5;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/* Listas con título, subtítulo y párrafo*/
+h2{
+    font-family: 'Rubik', sans-serif;
+    color: #0E172C;
+    margin: 2rem;
+    height: 4rem;
+    width: 39.063rem;
+    left: 5.313rem;
+    top: 536.75rem;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+    width: 100%;
+}
+.lista{
+    list-style-type: none;
+    font-family: 'Rubik', sans-serif;
+    margin: 2rem;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+.sublista{
+    list-style-type: square;
+}
+h3{
+    padding: 1rem;
+    background-color: #9268CA;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold ;
+    display: flex;
+    justify-content: start;
+    color: aliceblue;
+}
+.subtitulosfinal{
+    padding: 1rem;
+    background-color: #FFD7F4;
+    color: #0E172C;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold ;
+    display: flex;
+    justify-content: start;
+}
+/* Footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 0.625rem;
+}
+.icons{
+    width: 3.125rem;
+}
+/* Media Querie resoluciones menores a 768px */
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .respmenu{
+        visibility: visible;
+    }
+    .presentation{
+        flex-direction: column;
+    }
+    .fotoperfil{
+        height: 18.75rem;
+        width: 18.75rem;
+        left: 4.375rem;
+        top: 12.5rem;
+        margin: 0.7rem;
+    }
+    h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    h2{
+        margin: 1.5rem;
+        font-size: 30px;
+    }
+    footer{
+        margin: 3rem;
+    }
+}
+
